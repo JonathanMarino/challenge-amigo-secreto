@@ -21,3 +21,15 @@ function mostrarLista(){
     }
 }
 
+function sortearAmigo(){
+  if (listaDeNombres != ""){ 
+    let indiceAleatorio = parseInt(Math.floor(Math.random()*listaDeNombres.length));
+    let nombreSorteado = listaDeNombres[indiceAleatorio];
+    let mensajeGanador = document.getElementById("resultado");
+    
+    mensajeGanador.innerHTML = nombreSorteado;
+    mensajeGanador.appendChild(mensajeGanador);
+   
+}
+}
+
